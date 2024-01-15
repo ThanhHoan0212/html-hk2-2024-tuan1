@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Nhap nam can kiem tra: <input type="text" id="nam"/></p>
+    <p>Kich chuot de thuc hien: <input type="button" name="kiemtra" value="Kich chuot" onclick="kiem_tra_nam_nhuan()"/></p>
+    <script language="javascript">
+        function kiem_tra_nam_nhuan(){
+            var nam = document.getElementById("nam").value;
+            if(nam % 100 ==0)
+            {
+                if(nam % 400 == 0)
+                    alert(nam + " la nam nhuan");
+                else
+                    alert(nam + " khong phai la nam nhuan");}
+            else if(nam % 4 == 0){
+                alert(nam + " la nam nhuan");
+            }
+            else {
+                alert(nam + " khong phai la nam nhuan");}
+        }
+    </script>
+</body>
+</html>
